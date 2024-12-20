@@ -1,3 +1,10 @@
+git init
+git add [ ファイル名 or . ]
+git commit or git commit -m "コメント"
+git push -u origin main
+
+
+
 初めてのGit
 
 uza
