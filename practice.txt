@@ -1,10 +1,27 @@
-git init
-git add [ ファイル名 or . ]
-git commit or git commit -m "コメント"
-git push -u origin main
-git status
-git log [--oneline][-n (数字)][-p (ファイル名)]
-git diff [HEAD]
+Gitで管理する	git init
+ステージに挙げる	git add [ ファイル名 or . ]
+コミットする	git commit or git commit -m "コメント"	（iでコメント挿入escapeで終わり:wqでセーブ＆クイット）
+プッシュする（ローカルからあげる）	git push -u origin main
+今の状態を見る		git status
+変更履歴を見る（一行で、最新から数字個、変更内容表示）		git log [--oneline][-n (数字)][-p (ファイル名)]
+自分のパソコンのファイルとステージ上の違いを見る（ステージ上とコミット済のファイルの違い）		git diff [HEAD]
+ブランチを作る		git remote ブランチ名 URL
+ファイルを消す		git rm ファイル名
+ファイルをGitの管理に戻す		git reset HEAD ファイル名
+ファイルをパソコン上に戻す		git checkout ファイル名
+Gitのみからファイルを消す		git rm --cashed ファイル名
+
+
+Gitで管理したくないふぁいるの指定	.gitignore
+
+# #以下はコメント
+# 指定したファイルを除外
+ファイル名.txt
+# ルートディレクトリを明示したい場合
+/ファイル名.txt
+# ディレクトリ以下を除外したい場合
+ディレクトリ名/
+
 
 初めてのGit
 
